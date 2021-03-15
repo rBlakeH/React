@@ -1,4 +1,5 @@
 import './App.css';
+import buff from "./buff.JPG"
 
 function Header(props){
   return(
@@ -12,6 +13,8 @@ function Main(props){
   return(
     <section>
       <p>It's the {props.adjective} in town!</p>
+      <img src={buff} height={200}/>
+      <img src="https://github.com/rblakeh.png" height={200} alt="Blake riding a buffalo"/>
       <ul style={{textAlign: "left"}}>
         {props.items.map((item) => 
         <li key={item.id}>{item.title}</li>)}
